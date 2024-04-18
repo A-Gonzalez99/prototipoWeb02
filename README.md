@@ -22,7 +22,7 @@ This educational website aims to offer information about suadros. Users can brow
 <p>1.- Clone the repository.</p>
 <p>2.- Install the dependencies.</p>
 <p>3.- Start the development server.</p>
-<p>4.- Access the website at http://localhost:3000.</p>
+<p>4.- Access the website at http://localhost:5173</p>
 
 <h1>Contact:</h1>
 If you have any questions or comments, please do not hesitate to contact us.
