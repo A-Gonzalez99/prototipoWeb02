@@ -3,12 +3,12 @@
 This educational website aims to offer information about suadros. Users can browse the web, search for specific painters, and view information about their lives, styles, and most famous works.
 
 <h1>Used technology:</h1>
-<p> React: JavaScript framework for creating dynamic user interfaces.</p>
-- References to the Imdb.com website and louvre.fr: For information on website design.
-- LogoAi: For the creation of the logo.
-- Font Awesome: For icons.
-- LND 1 DAM teacher documentation: For the structure and design of the website.
-- Google Maps: For the interactive map.
+<p>React: JavaScript framework for creating dynamic user interfaces.</p>
+<p>References to the Imdb.com website and louvre.fr: For information on website design.</p>
+<p>LogoAi: For the creation of the logo.</p>
+<p>Font Awesome: For icons.</p>
+<p>LND 1 DAM teacher documentation: For the structure and design of the website.</p>
+<p>Google Maps: For the interactive map.</p>
 <h1>Characteristics:</h1>
 Search for paintings by styles.
 Detailed information about each painting.
