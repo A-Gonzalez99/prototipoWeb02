@@ -1,4 +1,5 @@
-<em>Tesauro educational website</em>
+<h1 align="center"> Tesauro educational website </h1>
+
 <h1>Description:</h1>
 This educational website aims to offer information about suadros. Users can browse the web, search for specific painters, and view information about their lives, styles, and most famous works.
 
