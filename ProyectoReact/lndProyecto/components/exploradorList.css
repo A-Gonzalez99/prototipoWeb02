@@ -1,0 +1,92 @@
+.div-img-expl {
+    max-width: 50vh;
+}
+
+.div-img-content-explorer {
+    background-color: rgba(15, 15, 15, 0.918);
+    top: -18px;
+    position: fixed;
+    z-index: 10;
+    visibility: hidden;
+    width: 100%;
+    height: 1000%;
+}
+
+.div-img-content-explorer button {
+    margin-top: 29px;
+    margin-left: 85%;
+    background-color: #f5c518;
+    padding: 16px;
+    border-radius: 100px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-contenido-img-texto {
+    background-color: transparent;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    
+}
+
+.div-contenido-img-texto p {
+    font-size: 1vw;
+    margin-right: 16px;
+}
+
+.div-contenido-img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 16px;
+    
+}
+
+.div-contenido-img-vertical {
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.div-contenido-img-horizontal {
+    max-width: none;
+    width: 100%;
+    object-fit: cover;
+}
+
+.div-contenido-texto {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    margin-left: 16px;
+}
+
+.div-contenido-texto i {
+    color: #f5c518;
+    font-size: 24px;
+    margin-top: 16px;
+    margin-right: 90vh;
+    cursor: pointer;
+}
