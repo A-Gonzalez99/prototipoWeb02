@@ -30,7 +30,6 @@ function ExplorarList() {
             class: 'div-contenido-img-vertical',
             info: `Noble viuda romana y madre de cinco hijos, Santa Paula decidió retirarse en el desierto y abandonar su vida mundana para dedicarse a la oración y a la penitencia. En el año 385 dejó Roma acompañada de su hija Eustoquia y llegó hasta Antioquía, donde se reunió con San Jerónimo, con el que emprendió una vida eremítica. La pintura de Lorena muestra el momento de su partida, ambientada en una recreación fantástica del puerto de Ostia.
             Las escenas de puerto constituían en 1639-1640 uno de los temas favoritos de Lorena y su inclusión en la serie del Retiro permite sospechar que el artista gozó de cierta libertad en el tratamiento de los asuntos representados. En la pintura del Prado se observan buena parte de las características habituales de este género, como la intensa luz dorada que ciega al espectador desde el último plano de la composición o la secuencia de edificios que, en ciertos casos, remiten a modelos reales como la Villa Medici o el faro de Génova, el cual constituye en este caso la última referencia arquitectónica en la línea del horizonte. Frente a otras vistas de puertos, en esta el tema alcanza un gran desarrollo, forzando la presencia de un extenso primer plano en el que se sitúa la comitiva que despide a la santa. Su presencia quizás no convenció totalmente al artista (o a futuros clientes), como podría pensarse por las soluciones buscadas en ocasiones posteriores, como en el Puerto con el embarco de Santa Úrsula (1641, Londres, National Gallery) o en el Puerto con el embarco de la reina de Saba (1648, Londres, National Gallery) donde el tema principal perdió protagonismo. Trató en otra ocasión el mismo asunto aprovechando, invertido, el grupo de Santa Paula y su familia, aunque varió completamente el tamaño, el formato y la arquitectura (1648-50, Épinal, Musée Départamental d Art Ancien et Contemporain).`
-
         }, {
             id: 5,
             url: 'https://content3.cdnprado.net/imagenes/Documentos/imgsem/e3/e3c5/e3c594b5-e334-45f7-9550-ea0665be3f30/57e3c7de-521f-4172-be81-92c7b3745dd6_832.jpg',
@@ -125,9 +124,19 @@ function ExplorarList() {
 
     ]
 
+    function mesclarImgs(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+    const shuffledDB = mesclarImgs(db);
+
+
     return (
         <>        
-            {db.map((b) => <ExplorarConstructor key={b} id={b.id} url={b.url} info={b.info} class={b.class} />)}
+            {shuffledDB.map((b) => <ExplorarConstructor key={b} id={b.id} url={b.url} info={b.info} class={b.class} />)}
         </>
     )
 }

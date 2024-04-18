@@ -1,5 +1,8 @@
 .div-img-expl {
     max-width: 50vh;
+    min-height: 0;
+
+    height: auto;
 }
 
 .div-img-content-explorer {
