@@ -3,7 +3,7 @@
 This educational website aims to offer information about suadros. Users can browse the web, search for specific painters, and view information about their lives, styles, and most famous works.
 
 <h1>Used technology:</h1>
-- React: JavaScript framework for creating dynamic user interfaces.
+<p> React: JavaScript framework for creating dynamic user interfaces.</p>
 - References to the Imdb.com website and louvre.fr: For information on website design.
 - LogoAi: For the creation of the logo.
 - Font Awesome: For icons.
