@@ -10,15 +10,15 @@ This educational website aims to offer information about suadros. Users can brow
 <p>LND 1 DAM teacher documentation: For the structure and design of the website.</p>
 <p>Google Maps: For the interactive map.</p>
 <h1>Characteristics:</h1>
-Search for paintings by styles.
-Detailed information about each painting.
-Image gallery of the works of each style.
-Interactive map showing where we are
-Responsive design that adapts to different screen sizes.
+<p>Search for paintings by styles.</p>
+<p>Detailed information about each painting.</p>
+<p>Image gallery of the works of each style.</p>
+<p>Interactive map showing where we are</p>
+<p>Responsive design that adapts to different screen sizes.</p>
 <h1>Instructions for use:</h1>
-- Clone the repository.
-- Install the dependencies.
-- Start the development server.
-- Access the website at http://localhost:3000.
+<p>1.- Clone the repository.</p>
+<p>2.- Install the dependencies.</p>
+<p>3.- Start the development server.</p>
+<p>4.- Access the website at http://localhost:3000.</p>
 <h1>Contact:</h1>
 If you have any questions or comments, please do not hesitate to contact us.
