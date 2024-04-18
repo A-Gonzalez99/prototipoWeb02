@@ -5,7 +5,7 @@ function MiniGame() {
   return (
     <>
       <MenuCabeza />
-
+      <div className="div-pincipal"><h6>Mini juego en progreso</h6></div>
       <MenuPie />
     </>
   )

@@ -51,7 +51,78 @@ function ExplorarList() {
             url: 'https://content3.cdnprado.net/imagenes/Documentos/imgsem/28/2825/2825df10-4b18-4763-bae8-37020028b31d/faa1d45a-e708-40b2-957f-ecf73b75338c_832.jpg',
             class: 'div-contenido-img-horizontal',
             info: 'El tapiz resultante de este cartón formaba parte de los que iban a decorar el comedor (?) de los Príncipes de Asturias (el futuro Carlos IV y su esposa María Luisa de Parma) en el palacio de El Pardo, encargo de 1786-1787. Por su formato estrecho y alargado y su forzada perspectiva de abajo arriba su destino era la decoración de una sobreventana, que formaba pareja con una escena de vuelo de pájaros, cuyo cartón se ha perdido, conocida sólo por el tapiz. La serie iba a consistir en trece tapices con el tema de las Cuatro Estaciones y otras escenas campestres, descritas como "Pinturas de asuntos jocosos y agradables". Los tapices no llegaron a colgarse en su destino por la muerte de Carlos III, ocurrida en diciembre de 1788. El Museo del Prado conserva once de los cartones (P02896, P00796, P6323, P02895, P02524, P00797, P00793, P00795, P00798, P07346, P00794) y uno de los bocetos preparatorios (P02782).'
+        },{
+            id: 9,
+            url: 'https://content3.cdnprado.net/imagenes/Documentos/imgsem/5e/5e17/5e177409-2993-4240-97fb-847a02c6496c/397fb2fb-8ef1-483f-b2d5-2b46100444e0_832.jpg',
+            class: 'div-contenido-img-horizontal',
+            info: 'Finalizada la guerra de la Independencia en 1813, el regreso a España de Fernando VII se había conocido desde diciembre de 1813, por el tratado de Valençay, así como su consiguiente entrada en Madrid. A principios de febrero la cuestión era inminente, habiéndole enviado el Consejo de la Regencia las condiciones para su vuelta al trono, en primer lugar, la jura de la Constitución de 1812. Su llegada a la capital iba a coincidir con la primera conmemoración del alzamiento del pueblo de Madrid contra los franceses el 2 de mayo de 1808. Entre febrero y marzo de 1814, el infante don Luís María de Borbón y Vallabriga, presidente del Consejo de la Regencia, así como las Cortes y el Ayuntamiento de Madrid, comenzaron la preparación de los actos para la entrada del rey. En la bibliografía sobre "El 2 de mayo de 1808 en Madrid" o "La lucha con los mamelucos" (P748), y su compañero, El "3 de mayo de 1808 en Madrid" o "Los fusilamientos", se fue consolidando, erróneamente, la idea de que estas obras fueron pintadas con un destino público en las calles de la capital.'
+        }, {
+            id: 10,
+            url: 'https://content3.cdnprado.net/imagenes/Documentos/imgsem/cc/cc12/cc128630-425b-4752-a805-008d26556bbb/1bb6eb26-b3ad-41ea-9696-791ba611e31f_832.jpg',
+            class: 'div-contenido-img-horizontal',
+            info: 'Obra maestra de toda la producción de Gisbert, este impresionante cuadro es también una de las indiscutibles y más bellas cumbres alcanzadas por el género histórico en España durante el antepasado siglo. Constituye además uno de los grandes manifiestos políticos de toda la historia de la pintura española en defensa de la libertad del hombre aplastada por el autoritarismo, siendo uno de los contados casos en que su claro mensaje propagandístico fue inspirado directamente por la oficialidad gubernamental. En efecto, el cuadro no ingresó en el Prado tras su paso por las Exposiciones Nacionales de Bellas Artes, como era habitual, sino que fue encargado directamente para el museo durante la regencia de María Cristina de Habsburgo-Lorena por el gobierno liberal de Práxedes Mateo Sagasta (1825-1903) al alicantino Antonio Antonio Gisbert, ya entonces consagrado como artista abanderado de este partido desde que pintara muchos años antes su cuadro de Los Comuneros, en pugna -más ideológica y estética que real- con Casado del Alisal, maestro representante de la oficialidad conservadora, publicándose la noticia del encargo en los diarios madrileños incluso algunos días antes de su designación oficial.'
+        }, {
+            id: 11,
+            url: 'https://content3.cdnprado.net/imagenes/Documentos/imgsem/c0/c0d4/c0d44a18-bef0-407c-befe-5f85ad56062e/edf08793-4e09-4156-a98a-02253d9f5784_832.jpg',
+            class: 'div-contenido-img-horizontal',
+            info: 'Este monumental lienzo ha sido considerado tradicionalmente como la obra maestra de José de Madrazo y la pintura más emblemática del Neoclasicismo español, exponiéndose en el Prado desde su apertura en 1819, en la llamada Galería de Artistas Contemporáneos. Por ello, adquirió desde entonces una enorme fama y reconocimiento en los ambientes artísticos oficiales del siglo XIX, así como en la historiografía del arte español hasta nuestros días.'
+        }, {
+            id: 12,
+            url: 'https://content3.cdnprado.net/imagenes/Documentos/imgsem/9f/9fdc/9fdc7800-9ade-48b0-ab8b-edee94ea877f/41866afd-6396-45e7-bd26-944263cf92f7_832.jpg',
+            class: 'div-contenido-img-horizontal',
+            info: 'Es una de las obras de mayor tamaño de Velázquez y en la que puso un mayor empeño para crear una composición a la vez compleja y creíble, que transmitiera la sensación de vida y realidad, y al mismo tiempo encerrara una densa red de significados. El pintor alcanzó su objetivo y el cuadro se convirtió en la única pintura a la que el tratadista Antonio Palomino dedicó un epígrafe en su historia de los pintores españoles (1724). Lo tituló En que se describe la más ilustre obra de don Diego Velázquez, y desde entonces no ha perdido su estatus de obra maestra. Gracias a Palomino sabemos que se pintó en 1656 en el Cuarto del Príncipe del Alcázar de Madrid, que es el escenario de la acción. El tratadista cordobés también identificó a la mayor parte de los personajes: son servidores palaciegos, que se disponen alrededor de la infanta Margarita, a la que atienden doña María Agustina Sarmiento y doña Isabel de Velasco, meninas de la reina. Además de ese grupo, vemos a Velázquez trabajar ante un gran lienzo, a Mari Bárbola y Nicolasito Pertusato, que azuza a un mastín, a la dama de honor doña Marcela de Ulloa, junto a un guardadamas, y, al fondo, tras la puerta, asoma José Nieto, aposentador. En el espejo se ven reflejados los rostros de Felipe IV y Mariana de Austria, padres de la infanta y testigos de la escena. Los personajes habitan un espacio modelado no sólo mediante las leyes de la perspectiva científica sino también de la perspectiva aérea, en cuya definición representa un papel importante la multiplicación de las fuentes de luz.'
+        }, {
+            id: 13,
+            url: 'https://arthive.com/res/media/img/orig/work/a40/167305.webp',
+            class: 'div-contenido-img-vertical',
+            info: 'La descripción de la obra aún no existe. A lo mejor, aparecerá más tarde. Sigue las actualizaciones de Tesauro.'
+        }, {
+            id: 14,
+            url: 'https://offloadmedia.feverup.com/madridsecreto.co/wp-content/uploads/2024/01/11120109/ventana-con-lluvia-1-1024x683.jpg',
+            class: 'div-contenido-img-horizontal',
+            info: 'El alféizar de una ventana. Sobre ella, un par de frascos vacíos, un tapón perdido, una radio antigua encima de unos cartones. A través del cristal, la lluvia, el muro de otra casa, una verja, un árbol. La pintura de Isabel Quintanilla (Madrid, 1938-Brunete, 2017)'
+        },  {
+            id: 15,
+            url: 'https://www.museunacional.cat/sites/default/files/017453-000.JPG',
+            class: 'div-contenido-img-horizontal',
+            info: 'Esta obra está seleccionada para el proyecto «Partage Plus – Digitising and Enabling Art Nouveau for Europeana»'
+        }, {
+            id: 16,
+            url: 'https://content3.cdnprado.net/imagenes/Documentos/imgsem/a1/a10f/a10f154c-0bc3-4004-b9e6-55a7b9b2c7cb/994331bf-f2a6-4ad3-9d27-1dbc41984828_832.jpg',
+            class: 'div-contenido-img-horizontal',
+            info: 'Nacido en el seno de una familia de la alta sociedad madrileña, estudió leyes y se doctoró en derecho civil en 1867. Compaginó sus estudios legales con su afición por las Bellas Artes, pues desde 1874 estudió pintura en la Escuela de Bellas Artes junto a Carlos de Haes, y acudió al Museo del Prado '
+        }, {
+            id: 17,
+            url: 'https://www.rubendeluis.com/wp-content/uploads/2018/06/Carlos-de-Haes-guadarrama.jpg',
+            class: 'div-contenido-img-horizontal',
+            info: 'Haes nacido en Bélgica aunque pasó gran parte de su vida en España, tiene una educación y formación importante en la pintura de Flandes de las escuelas del norte por lo que esta influencia se verá reflejado en su pintura. A lo largo del siglo XIX hay dos líneas bien marcadas como es la pintura clasicista que comienza ya en el siglo XVII con artista como Claudio de Lorena.'
+        }, {
+            id: 18,
+            url: 'https://content3.cdnprado.net/imagenes/Documentos/imgsem/27/2749/274911df-f921-44de-b06f-81d98c001004/1cf75d52-b69f-4681-bcf8-b6cde5756d08.jpg',
+            class: 'div-contenido-img-horizontal',
+            info: 'Madrid, 1833-Venecia, 1908). Pintor español, considerado como el iniciador del paisajismo moderno español. Comenzó su formación artística con su hermano el grabador Bernardo Rico, con quien colaboró en el taller de su tío Calixto Ortega Matamoros en sus trabajos como ilustrador. Estudió en la Escuela de Bellas Artes de San Fernando de Madrid, con los paisajistas Genaro Pérez Villaamil, Fernando Ferrant y Vicente Camarón. En el Liceo de Madrid, trabó amistad con Rosales, Fortuny y Raimundo de Madrazo. Obtuvo una beca para continuar sus estudios en París en 1862, donde tuvo la oportunidad de conocer la obra de Meissonier y Daubigny, en cuyo taller comenzó a trabajar desde 1863. Fue amigo de alguno de los primeros artistas impresionistas, como es el caso de Camille Pissarro. Estuvo en Suiza y Gran Bretaña, además de rea­lizar frecuentes viajes a Venecia en compañía de Mariano Fortuny. Concurrió asiduamente a las Exposiciones Nacionales de Bellas Artes, obtuvo tercera medalla en 1860 por el lienzo titulado Un país, y segunda medalla en 1864 y 1867. Asimismo, remitió sus lienzos a las Universales de París de 1878 y 1888, en las que fue galardonado con tercera y segunda medalla, respectivamente. Gran parte de sus obras se hallan en colecciones particulares extranjeras debido a la estrecha relación comercial que mantuvo con el marchante francés de arte Adolphe Goupil. En sus lienzos se pueden rastrear influencias de la escuela de Barbizon, Turner, Claudio de Lorena y el preciosismo de Fortuny. En sus primeros paisajes manifiesta una visión romántica que, tras una etapa realista evoluciona hasta los finales con influencias de Fortuny. Como ilustrador colaboró en La Ilustración Española y Americana, publicación de la que fue director en 1895. Fue comendador de la orden de Isabel la Católica y recibió la cruz de la Legión de Honor francesa.'
+        },{
+            id: 19,
+            url: 'https://cms.guggenheim-bilbao.eus/uploads/2012/05/2003-Saura-Memoria-y-recuerdo-1024x823.jpg',
+            class: 'div-contenido-img-horizontal',
+            info: 'Nacido en Huesca en 1930, Antonio Saura residió con su familia en Madrid, Valencia y Barcelona. Desde temprana edad acompañó a su padre en sus visitas al Museo del Prado, donde quedó profundamente impactado por el Cristo crucificado (1632) de Diego Velázquez y el Perro semihundido (1821–23) de Francisco de Goya, que marcarían de forma singular la temática de su futura obra. Autodidacta, comenzó a pintar y escribir en 1947 durante la convalecencia de una larga enfermedad. Entre 1948 y 1950 realizó la serie Constelaciones en la que queda patente la influencia de la pintura de Miró de los años 30 y 40, así como de la concepción artística del surrealismo agrupado en torno a la figura de André Breton. Entre 1953 y 1955 residió en París donde participó, en un principio, en las actividades del grupo surrealista que lideraba Breton, conociendo después el informalismo francés, llamado art autre, y la pintura norteamericana.'
+        }, {
+            id: 20,
+            url: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Fusilamiento_de_Torrijos_%28Gisbert%29.jpg',
+            class: 'div-contenido-img-horizontal',
+            info: 'El pronunciamiento de Torrijos fue un pronunciamiento encabezado por el general y político liberal José María Torrijos que tuvo lugar en 1831 en España al final del reinado de Fernando VII y cuyo objetivo era poner fin al absolutismo y restaurar la Constitución de 1812. Torrijos desembarcó en la costa de Málaga procedente de Gibraltar el 2 de diciembre de 1831 junto a sesenta hombres que lo acompañaban, pero cayeron en la trampa que les habían tendido las autoridades absolutistas y fueron detenidos. Nueve días después, el 11 de diciembre, Torrijos y 48 de sus compañeros supervivientes fueron fusilados sin juicio previo en la playa de San Andrés de Málaga, un hecho que quedó inmortalizado por un soneto de José de Espronceda titulado A la muerte de Torrijos y sus compañeros y por un famoso cuadro que pintó en 1888 Antonio Gisbert.'
+        }, {
+            id: 21,
+            url: 'https://gregorioprieto.org/wp-content/uploads/p4687.webp',
+            class: 'div-contenido-img-horizontal',
+            info: 'Gregorio Prieto (1897-1992) El centro del mundo, ca. 1965247x 298 cm, Óleo sobre lienzo Pintura España- Madrid Expuesto en sala'
+        }, {
+            id: 22,
+            url: 'https://gregorioprieto.org/wp-content/uploads/p1001.webp',
+            class: 'div-contenido-img-vertical',
+            info: 'Gregorio Prieto (1897-1992) Retrato de Federico García Lorca, 1936 57.5x 38 cm Óleo sobre papel. Pintura España - Madrid Expuesto en sala'
         }
+
     ]
     return (
         <>

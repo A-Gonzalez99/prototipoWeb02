@@ -1,3 +1,4 @@
+import ImpresionismoPage from '../../components/ImpresionismoPage.jsx'
 import MenuCabeza from '../../components/MenuCabeza'
 import MenuPie from '../../components/MenuPie'
 
@@ -5,11 +6,10 @@ function Impresionismo() {
   return (
     <>
       <MenuCabeza />
-      <p>Impresionismo</p>
-
+        <ImpresionismoPage/>
       <MenuPie />
     </>
-  )
+)
 }
 
 export default Impresionismo

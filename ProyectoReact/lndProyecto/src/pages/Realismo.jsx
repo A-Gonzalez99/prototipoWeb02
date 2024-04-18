@@ -1,12 +1,12 @@
 import MenuCabeza from '../../components/MenuCabeza'
 import MenuPie from '../../components/MenuPie'
+import RealismoPage from '../../components/RealismoPage'
 
 function Realismo() {
   return (
     <>
       <MenuCabeza />
-      <p>Realismo</p>
-
+      <RealismoPage/>
       <MenuPie />
     </>
   )

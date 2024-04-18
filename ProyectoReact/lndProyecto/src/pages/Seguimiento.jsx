@@ -5,7 +5,7 @@ function Seguimiento() {
   return (
     <>
       <MenuCabeza />
-      <p>Seguimiento</p>
+      <div className="div-pincipal"><h6>Lita de seguimiento vacia</h6></div>
 
       <MenuPie />
     </>

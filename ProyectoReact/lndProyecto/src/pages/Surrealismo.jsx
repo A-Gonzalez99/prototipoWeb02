@@ -1,12 +1,12 @@
 import MenuCabeza from '../../components/MenuCabeza'
 import MenuPie from '../../components/MenuPie'
+import SurrealismoPage from '../../components/SurrealismoPage'
 
 function Surrealismo() {
   return (
     <>
       <MenuCabeza />
-      <p>Surrealismo</p>
-
+      <SurrealismoPage/>
       <MenuPie />
     </>
   )
