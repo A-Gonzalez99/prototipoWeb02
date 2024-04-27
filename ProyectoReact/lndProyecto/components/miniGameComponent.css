@@ -1,0 +1,194 @@
+.div-conteiner{
+    padding-bottom: 18px;
+}
+
+.div-main-game{
+    background-color: rgba(128, 128, 128, 0.073);
+    width: 80%;
+    height: 99%;
+    margin: auto;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+}
+
+.div-main-game h6{
+    font-size: 3vw;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.div-game-img{
+    background-color: brown;
+    width: 90vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+.div-count{
+    background-color: transparent;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: flex;
+    align-items: center;
+}
+
+.div-count p{
+    color: yellow;
+    font-size: 3em;
+    margin-left: 8px;
+}
+.div-count i{
+    color: yellow;
+    font-size: 3em;
+}
+
+
+
+
+.div-ranking{
+    background-color: transparent;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    
+}
+
+.div-ranking p{
+    color: yellow;
+    font-size: 1.5em;
+    margin-right: 16px;
+
+}
+.div-ranking i{
+    color: yellow;
+    font-size: 1.5em;
+    cursor:pointer;
+}
+
+
+
+
+.div-game-points{
+    background-color: transparent;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    align-self: flex-end;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.div-game-points div{
+    background-color: #2a2929;   
+    border: 2px solid yellow;
+    width: 50vw;
+    height: 3.5vh;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    align-items: center;
+    display:flex;
+}
+
+.div-game-points i{
+   color: yellow;
+   margin-left: 16px;
+}
+
+.div-game-points p{
+    color: white;
+    margin-left: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+
+.div-game-input{
+    background-color:transparent;
+    width: 90%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+}
+
+
+.div-game-input div{
+    background-color: #2a2929;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    align-self: flex-end;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    width: 50vw;   
+    border-radius: 10px;
+}
+
+.div-game-input form{
+    background-color: transparent;
+    width: 10%;
+    height: 100%;
+    align-self: flex-end;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.div-game-input input{
+    height: 3vh;
+    width: 100%;
+    border-top-left-radius: 10px;
+    padding-left: 16px; 
+    background-color: #ffe8e8;
+}
+
+.div-game-input input:focus{
+    outline: none;   
+}
+
+
+.div-game-input button{
+    background-color: rgb(22, 148, 22);
+    height: 3vh;
+    width: 3vh;
+    border-top-right-radius: 10px;
+}
+
+.div-game-input select{
+    background-color: #ffe8e8;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+
+}
+
+.div-game-input option {
+    padding: 6px;
+    padding-left: 10px; /* Adjust padding values for desired margin */
+    height: 100%;
+
+}
