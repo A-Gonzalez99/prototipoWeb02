@@ -340,5 +340,9 @@
 }
 
 
+.imgblur{
 
+    filter: blur(15px);
+    overflow: hidden;
+}
 

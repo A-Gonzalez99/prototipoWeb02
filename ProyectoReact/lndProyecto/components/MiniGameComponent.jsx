@@ -56,7 +56,6 @@ function MiniGameComponent() {
 
     useEffect(() => {
         getAllScores();
-        console.log(score.le);
         colocarPuntos();
     }, []);
 
@@ -79,18 +78,20 @@ function MiniGameComponent() {
     }
 
     const updateScoreJugador = (puntos) => {
-        
         scoreService.updateScore(idJugagor, parseInt(puntos))
-       
     }
 
     // Logica del Juego
     const startJuego = () => {
-        getAllMovies()
-        document.getElementById("imgJuego").src = movies[contador].url
-        document.getElementById("div-start-game").style.visibility = "hidden"
-        document.getElementById("nombre-jugador-juego").textContent=document.getElementById("name-player").value
-        addNewJugador()
+        const n = document.getElementById("name-player").value
+        if(n.length>2 && n.length<14){
+
+            getAllMovies()
+            document.getElementById("imgJuego").src = movies[contador].url
+            document.getElementById("div-start-game").style.visibility = "hidden"
+            document.getElementById("nombre-jugador-juego").textContent=n
+            addNewJugador()
+        }
     };
 
     const [contador, setContador] = useState(0);
@@ -124,25 +125,34 @@ function MiniGameComponent() {
             setSearchTerm('')
             document.getElementById("boton-seguir").style.visibility="visible"
             setCompletado(true)
+            document.getElementById('imgJuego').style.filter = 'blur(0px)';
 
         }else{
             if(contadorIntento==0){
                 document.getElementById("intento-0").className="intento-fallido"
                 document.getElementById("intento-1").className="div-game-points-intento-actual"
                 document.getElementById("texto-intento-0").textContent=texto
+                document.getElementById('imgJuego').style.filter = 'blur(10px)';
 
             }
             if(contadorIntento==1){
                 document.getElementById("intento-1").className="intento-fallido"
                 document.getElementById("intento-2").className="div-game-points-intento-actual"
                 document.getElementById("texto-intento-1").textContent=texto
+                document.getElementById('imgJuego').style.filter = 'blur(5px)';
 
             }
+            setContadorIntento(contadorIntento + 1);
+
             if(contadorIntento==2){
                 document.getElementById("intento-2").className="intento-fallido"
-                document.getElementById("texto-intento-1").textContent=texto
+                document.getElementById("texto-intento-2").textContent=texto
+                document.getElementById('imgJuego').style.filter = 'blur(0px)';
+                document.getElementById("boton-seguir").style.visibility="visible"
+                setContadorIntento(0);
+                setCompletado(true)
+
             }
-            setContadorIntento(contadorIntento + 1);
         }
       
 
@@ -160,7 +170,9 @@ function MiniGameComponent() {
         document.getElementById("intento-0").className="div-game-points-intento-actual"
         document.getElementById("intento-1").className="div-game-points-intento"
         document.getElementById("intento-2").className="div-game-points-intento"
-       
+        document.getElementById('imgJuego').style.filter = 'blur(15px)';
+        setSearchTerm('')
+
 
     }
       
@@ -176,18 +188,18 @@ function MiniGameComponent() {
 
                     <div>
                         <div className="div-game-img">
-                            <img id="imgJuego" src="" />
+                            <img className="imgblur" id="imgJuego" src="" />
                         </div>
                     </div>
 
                     <div className="div-game-points">
                         <button id="boton-seguir" onClick={siguienteCuadro}>Siguiente cuadro</button>
                         <div id="intento-0" className="div-game-points-intento-actual"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        <p id="texto-intento-0">---</p></div>
+                        <p id="texto-intento-0"></p></div>
                         <div id="intento-1" className="div-game-points-intento"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        <p id="texto-intento-1">---</p></div>
+                        <p id="texto-intento-1"></p></div>
                         <div id="intento-2" className="div-game-points-intento"><i class="fa-solid fa-star"></i>
-                        <p id="texto-intento-2">---</p></div>
+                        <p id="texto-intento-2"></p></div>
                     </div>
 
                     <div className="div-game-input">
@@ -232,7 +244,7 @@ function MiniGameComponent() {
                         type="text"
                         id="name-player"
                         name="name-player"
-                        placeholder="Nombre del jugador"
+                        placeholder="Nombre del jugador (3-13 Letras)"
                     />
                     <button onClick={startJuego}>StarGame</button>
                 </div>
