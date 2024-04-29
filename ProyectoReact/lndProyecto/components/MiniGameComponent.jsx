@@ -5,9 +5,19 @@ import scoreService from "../src/services/firebase/score.config";
 
 
 function MiniGameComponent() {
-
+    // Score bd
+    const [score, setScore] = useState([]);
     // Pinturas bd
-    const [movies, setMovies] = useState([]);
+    const [pinturas, setPinturas] = useState([]);
+    const [contador, setContador] = useState(0);
+    const [contadorPuntos, setContadorPuntos] = useState(0);
+    const [contadorIntento, setContadorIntento] = useState(0);
+    const [idJugagor, setIdJugagor] = useState(-1);
+    const [searchTerm, setSearchTerm] = useState('');
+    const [completado, setCompletado] = useState(false);
+
+    
+
     const getAllMovies = () => {
         moviesService.getAllMovies().then((items) => {
             let auxMovies = []
@@ -17,33 +27,45 @@ function MiniGameComponent() {
 
                 auxMovies.push({
                     name: data.name,
-                    price: data.price,
+                    tag: data.tag,
                     url: data.url
                 })
 
             })
-            setMovies([...auxMovies]);
+            setPinturas([...auxMovies]);
             const movieNames = auxMovies.map((movie) => movie.name);
             const filtered = movieNames.filter((name) =>
                 name.toLowerCase().includes(searchTerm.toLowerCase())
             );
-            setFilteredWords(filtered); // Update filteredWords state
         })
     }
 
-    // Score bd
-    const [score, setScore] = useState([]);
+    function mesclarImgs(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+    let shuffledDB = mesclarImgs(pinturas);
+
+    useEffect(() => {
+        getAllMovies()
+        
+    }, []);
+
+
     const getAllScores = () => {
         scoreService.getAllScores().then((items) => {
             let allSores = [];
             items.forEach(item => {
-              const key = item.key;
-              const data = item.val();
-              allSores.push({
-                key: key,
-                name: data.name,
-                points: data.points
-              });
+                const key = item.key;
+                const data = item.val();
+                allSores.push({
+                    key: key,
+                    name: data.name,
+                    points: data.points
+                });
             });
             allSores.sort((a, b) => b.points - a.points);
             const top5 = allSores.slice(0, 5);
@@ -53,28 +75,19 @@ function MiniGameComponent() {
             console.error(err);
         });
     }
-
+    
     useEffect(() => {
         getAllScores();
-        colocarPuntos();
+        shuffledDB =mesclarImgs(pinturas);
+        console.log(shuffledDB)
+        
     }, []);
 
-    const colocarPuntos =()=>{
-        for(var x=0;x<score.length;x++){
-            document.getElementById("name-top-"+x).textContent='...'+score[x].name
-            document.getElementById("score-top-"+x).textContent='...:'+score[x].points
-        }
-        console.log("Nombres puestos")
-    }
-
     const addNewJugador = () => {
-        // Obtener el nombre del jugador desde un elemento HTML (supongo que es un input)
         const nameJugador = document.getElementById("name-player").value;
-        // Puntaje inicial del jugador
         const scoreJugador = 0;
-        // Llamar a la función addScore del servicio scoreService
-        scoreService.addScore(score.length+1,nameJugador, scoreJugador)
-        SetIdJugagor(score.length+1)
+        scoreService.addScore(score.length + 1, nameJugador, scoreJugador)
+        setIdJugagor(score.length + 1)
     }
 
     const updateScoreJugador = (puntos) => {
@@ -82,100 +95,86 @@ function MiniGameComponent() {
     }
 
     // Logica del Juego
+
+ 
+
     const startJuego = () => {
         const n = document.getElementById("name-player").value
-        if(n.length>2 && n.length<14){
-
-            getAllMovies()
-            document.getElementById("imgJuego").src = movies[contador].url
+        if (n.length > 2 && n.length < 14) {
+            console.log(shuffledDB)   
+            document.getElementById("imgJuego").src = shuffledDB[contador].url
+            document.getElementById("nombre-jugador-juego").textContent = n
             document.getElementById("div-start-game").style.visibility = "hidden"
-            document.getElementById("nombre-jugador-juego").textContent=n
             addNewJugador()
         }
     };
 
-    const [contador, setContador] = useState(0);
-    const [contadorPuntos, setContadorPuntos] = useState(0);
-    const [contadorIntento, setContadorIntento] = useState(0);
-    const [idJugagor, SetIdJugagor] = useState(-1);
 
-    // State variables
-    const [searchTerm, setSearchTerm] = useState('');
-    const [completado, setCompletado] = useState(false);
 
-    // Function to handle input change
     const handleInputChange = (event) => {
         setSearchTerm(event.target.value.toLowerCase());
     };
 
     const handleClick = () => {
-        if (movies.length > contador && completado==false) {            
-            verificar()      
-
+        if (pinturas.length > contador && completado == false) {
+            verificar()
         }
     };
 
-    const verificar=()=>{
-        let texto=document.getElementById("name").value
-        
-        if(texto==movies[contador].name){
-            if(contadorIntento==0){setContadorPuntos(contadorPuntos+50),document.getElementById("texto-intento-0").textContent=texto, updateScoreJugador(contadorPuntos+50)}
-            if(contadorIntento==1){setContadorPuntos(contadorPuntos+25),document.getElementById("texto-intento-1").textContent=texto, updateScoreJugador(contadorPuntos+25)}
-            if(contadorIntento==2){setContadorPuntos(contadorPuntos+5),document.getElementById("texto-intento-2").textContent=texto, updateScoreJugador(contadorPuntos+5)}
+    const verificar = () => {
+        let texto = document.getElementById("name").value
+
+        if (texto == shuffledDB[contador].name) {
+            if (contadorIntento == 0) { setContadorPuntos(contadorPuntos + 50), document.getElementById("texto-intento-0").textContent = texto, updateScoreJugador(contadorPuntos + 50) }
+            if (contadorIntento == 1) { setContadorPuntos(contadorPuntos + 25), document.getElementById("texto-intento-1").textContent = texto, updateScoreJugador(contadorPuntos + 25) }
+            if (contadorIntento == 2) { setContadorPuntos(contadorPuntos + 5), document.getElementById("texto-intento-2").textContent = texto, updateScoreJugador(contadorPuntos + 5) }
             setSearchTerm('')
-            document.getElementById("boton-seguir").style.visibility="visible"
+            document.getElementById("boton-seguir").style.visibility = "visible"
             setCompletado(true)
             document.getElementById('imgJuego').style.filter = 'blur(0px)';
 
-        }else{
-            if(contadorIntento==0){
-                document.getElementById("intento-0").className="intento-fallido"
-                document.getElementById("intento-1").className="div-game-points-intento-actual"
-                document.getElementById("texto-intento-0").textContent=texto
+        } else {
+            if (contadorIntento == 0) {
+                document.getElementById("intento-0").className = "intento-fallido"
+                document.getElementById("intento-1").className = "div-game-points-intento-actual"
+                document.getElementById("texto-intento-0").textContent = texto
                 document.getElementById('imgJuego').style.filter = 'blur(10px)';
-
             }
-            if(contadorIntento==1){
-                document.getElementById("intento-1").className="intento-fallido"
-                document.getElementById("intento-2").className="div-game-points-intento-actual"
-                document.getElementById("texto-intento-1").textContent=texto
+
+            if (contadorIntento == 1) {
+                document.getElementById("intento-1").className = "intento-fallido"
+                document.getElementById("intento-2").className = "div-game-points-intento-actual"
+                document.getElementById("texto-intento-1").textContent = texto
                 document.getElementById('imgJuego').style.filter = 'blur(5px)';
-
             }
-            setContadorIntento(contadorIntento + 1);
 
-            if(contadorIntento==2){
-                document.getElementById("intento-2").className="intento-fallido"
-                document.getElementById("texto-intento-2").textContent=texto
+            setContadorIntento(contadorIntento + 1);
+            if (contadorIntento == 2) {
+                document.getElementById("intento-2").className = "intento-fallido"
+                document.getElementById("texto-intento-2").textContent = texto
                 document.getElementById('imgJuego').style.filter = 'blur(0px)';
-                document.getElementById("boton-seguir").style.visibility="visible"
+                document.getElementById("boton-seguir").style.visibility = "visible"
                 setContadorIntento(0);
                 setCompletado(true)
-
             }
         }
-      
-
-
     }
-    
-    const siguienteCuadro=()=>{
+
+    const siguienteCuadro = () => {
         setContador(contador + 1);
-        document.getElementById("imgJuego").src = movies[contador + 1].url
-        document.getElementById("boton-seguir").style.visibility="hidden"
+        document.getElementById("imgJuego").src = shuffledDB[contador + 1].url
+        document.getElementById("boton-seguir").style.visibility = "hidden"
         setCompletado(false)
-        document.getElementById("texto-intento-0").textContent=""
-        document.getElementById("texto-intento-1").textContent=""
-        document.getElementById("texto-intento-2").textContent=""
-        document.getElementById("intento-0").className="div-game-points-intento-actual"
-        document.getElementById("intento-1").className="div-game-points-intento"
-        document.getElementById("intento-2").className="div-game-points-intento"
+        document.getElementById("texto-intento-0").textContent = ""
+        document.getElementById("texto-intento-1").textContent = ""
+        document.getElementById("texto-intento-2").textContent = ""
+        document.getElementById("intento-0").className = "div-game-points-intento-actual"
+        document.getElementById("intento-1").className = "div-game-points-intento"
+        document.getElementById("intento-2").className = "div-game-points-intento"
         document.getElementById('imgJuego').style.filter = 'blur(15px)';
         setSearchTerm('')
-
-
     }
-      
+
     return (
         <>
             <div className="div-conteiner">
@@ -195,11 +194,11 @@ function MiniGameComponent() {
                     <div className="div-game-points">
                         <button id="boton-seguir" onClick={siguienteCuadro}>Siguiente cuadro</button>
                         <div id="intento-0" className="div-game-points-intento-actual"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        <p id="texto-intento-0"></p></div>
+                            <p id="texto-intento-0"></p></div>
                         <div id="intento-1" className="div-game-points-intento"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        <p id="texto-intento-1"></p></div>
+                            <p id="texto-intento-1"></p></div>
                         <div id="intento-2" className="div-game-points-intento"><i class="fa-solid fa-star"></i>
-                        <p id="texto-intento-2"></p></div>
+                            <p id="texto-intento-2"></p></div>
                     </div>
 
                     <div className="div-game-input">
@@ -219,7 +218,7 @@ function MiniGameComponent() {
                             <select multiple hidden={!searchTerm.length} onChange={(event) => {
                                 setSearchTerm(event.target.value); // Update searchTerm on change
                             }}>
-                                {movies.map((m) => (
+                                {pinturas.map((m) => (
                                     <option key={m.name} value={m.name}>
                                         {m.name}
                                     </option>
@@ -232,24 +231,23 @@ function MiniGameComponent() {
             </div>
 
             <div id="div-start-game" className="div-ranking-page">
-                
                 <div className="div-registro-main">
                     <div className="div-registro-top"><i class="fa-solid fa-ranking-star"></i></div>
-                    <div className="div-registro-top-nombre"><h6>1 </h6><h6 id="name-top-0"></h6><h6 id="score-top-0"></h6></div>
-                    <div className="div-registro-top-nombre"><h6>2 </h6><h6 id="name-top-1"></h6><h6 id="score-top-1"></h6></div>
-                    <div className="div-registro-top-nombre"><h6>3 </h6><h6 id="name-top-2"></h6><h6 id="score-top-2"></h6></div>
-                    <div className="div-registro-top-nombre"><h6>4 </h6><h6 id="name-top-3"></h6><h6 id="score-top-3"></h6></div>
-                    <div className="div-registro-top-nombre"><h6>5 </h6><h6 id="name-top-4"></h6><h6 id="score-top-4"></h6></div>
+
+                    {score.map((s,index)=> (
+                        <div className="div-registro-top-nombre"><h6>{index+1} </h6><h6>{'...'+s.name}</h6><h6>{'...'+s.points}</h6></div>
+                    ))
+                    }                 
+                    
                     <input
                         type="text"
                         id="name-player"
                         name="name-player"
                         placeholder="Nombre del jugador (3-13 Letras)"
                     />
-                    <button onClick={startJuego}>StarGame</button>
+                    <button id="start-game" onClick={startJuego}>StarGame</button>
                 </div>
-
-            </div>
+            </div >
         </>
     )
 }
