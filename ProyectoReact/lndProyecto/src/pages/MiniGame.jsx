@@ -1,11 +1,12 @@
 import MenuCabeza from '../../components/MenuCabeza'
 import MenuPie from '../../components/MenuPie'
+import MiniGameComponent from '../../components/MiniGameComponent'
 
 function MiniGame() {
   return (
     <>
       <MenuCabeza />
-      <div className="div-pincipal"><h6>Mini juego en progreso</h6></div>
+        <MiniGameComponent/>
       <MenuPie />
     </>
   )

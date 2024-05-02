@@ -122,3 +122,11 @@
 .textoCopy{
     font-size: 12px;
 }
+
+@media (max-width: 768px) {
+ 
+
+    .panelAcceso2 p{
+        font-size: 9px;
+    }
+}
