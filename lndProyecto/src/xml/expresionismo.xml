@@ -1,0 +1,52 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:media="http://search.yahoo.com/mrss/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <atom:link href="http://localhost:5173/explorer" rel="self" type="application/rss+xml"/>
+        <atom:link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
+        <title>RSS de cuadros de Tesauro/Realismo</title>
+        <link>http://localhost:5173/home</link>
+        <description>RSS de cuadros de Tesauro/Realismo</description>
+        <language>es-ES</language>
+        <pubDate>Mon, 06 May 2024 18:21:10 +0200</pubDate>
+        <lastBuildDate>Mon, 06 May 2024 18:21:10 +0200</lastBuildDate>
+        <ttl>60</ttl>
+
+        <item>
+            <guid isPermalink="true">http://localhost:5173/expresionismo</guid>
+            <title>Crucifixión</title>
+            <link>http://localhost:5173/expresionismo</link>
+            <description>
+                <img align="left" src="https://cms.guggenheim-bilbao.eus/uploads/2012/05/2003-Saura-Memoria-y-recuerdo-1024x823.jpg"/>
+            Nacido en Huesca en 1930, Antonio Saura residió con su familia en Madrid, Valencia y Barcelona. Desde temprana edad acompañó a su padre en sus visitas al Museo del Prado, donde quedó profundamente impactado por el Cristo crucificado (1632) de Diego Velázquez y el Perro semihundido (1821–23) de Francisco de Goya, que marcarían de forma singular la temática de su futura obra. Autodidacta, comenzó a pintar y escribir en 1947 durante la convalecencia de una larga enfermedad. Entre 1948 y 1950 realizó la serie Constelaciones en la que queda patente la influencia de la pintura de Miró de los años 30 y 40, así como de la concepción artística del surrealismo agrupado en torno a la figura de André Breton. Entre 1953 y 1955 residió en París donde participó, en un principio, en las actividades del grupo surrealista que lideraba Breton, conociendo después el informalismo francés, llamado art autre, y la pintura norteamericana.
+            </description>
+            <pubDate>Thu, 09 Jun 2022 11:28:50 +0200</pubDate>
+            <dc:creator>Antonio Saura</dc:creator>
+        </item>
+
+        <item>
+            <guid isPermalink="true">http://localhost:5173/expresionismo</guid>
+            <title>Pronunciamiento de Torrijos</title>
+            <link>http://localhost:5173/expresionismo</link>
+            <description>
+                <img align="left" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Fusilamiento_de_Torrijos_%28Gisbert%29.jpg"/>
+                El pronunciamiento de Torrijos fue un pronunciamiento encabezado por el general y político liberal José María Torrijos que tuvo lugar en 1831 en España al final del reinado de Fernando VII y cuyo objetivo era poner fin al absolutismo y restaurar la Constitución de 1812. Torrijos desembarcó en la costa de Málaga procedente de Gibraltar el 2 de diciembre de 1831 junto a sesenta hombres que lo acompañaban, pero cayeron en la trampa que les habían tendido las autoridades absolutistas y fueron detenidos. Nueve días después, el 11 de diciembre, Torrijos y 48 de sus compañeros supervivientes fueron fusilados sin juicio previo en la playa de San Andrés de Málaga, un hecho que quedó inmortalizado por un soneto de José de Espronceda titulado A la muerte de Torrijos y sus compañeros y por un famoso cuadro que pintó en 1888 Antonio Gisbert.
+            </description>
+            <pubDate>Thu, 09 Jun 2022 11:28:50 +0200</pubDate>
+            <dc:creator>Antonio Gisbert Pérez</dc:creator>
+        </item>
+
+        <item>
+            <guid isPermalink="true">http://localhost:5173/expresionismo</guid>
+            <title>El centro del mundo</title>
+            <link>http://localhost:5173/expresionismo</link>
+            <description>
+                <img align="left" src="https://gregorioprieto.org/wp-content/uploads/p4687.webp"/>
+               Gregorio Prieto (1897-1992) El centro del mundo, ca. 1965247x 298 cm, Óleo sobre lienzo Pintura España- Madrid Expuesto en sala
+            </description>
+            <pubDate>Thu, 09 Jun 2022 11:28:50 +0200</pubDate>
+            <dc:creator>Gregorio Prieto</dc:creator>
+        </item>
+
+    </channel>
+</rss>

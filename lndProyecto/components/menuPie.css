@@ -1,0 +1,132 @@
+.panelPie{
+    width: 100%;
+    background-color:#2a2929;   
+    height: auto;
+    margin-top: auto;
+}
+
+.panelPie p{
+    text-align: center;
+    color: aliceblue;
+}
+
+.panelPie img{
+    height: 36px;
+    margin-bottom: 16px;
+}
+
+.panelPie2{
+    width: 70%;
+   
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.panelPie3{
+    margin-top: 16px;
+    width: auto;
+    height: 100%;
+    display:contents;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.452);
+    padding: 4px;
+    margin-bottom: 16px;
+    
+
+}
+
+.panelPie4{
+    width: 70%;
+   
+    height: 100%;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
+    flex-direction:column;
+    margin-right: 34px;
+}
+
+.panelPie2 p{  
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-bottom: 16px;
+
+}
+
+.panelPie4 p{  
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 0px;
+}
+
+.panelPie4 h6{  
+    color: rgb(255, 255, 255);
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 0px;
+    margin-top: 16px;
+
+}
+
+.panelPie5{
+ display: flex;
+ border-radius: 20x;
+
+}
+
+.panelPie5 img{
+    width: 70px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
+    border-radius: 10px;
+    margin-right: 16px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+}
+
+.panelAcceso{
+    width: 100%;
+    height: auto;
+}
+
+.panelAcceso p{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.panelAcceso2{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction:row;
+    display: flex;
+    justify-content: center;
+}
+
+.panelAcceso2 p{
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: auto;
+}
+
+.textoCopy{
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+ 
+
+    .panelAcceso2 p{
+        font-size: 9px;
+    }
+}

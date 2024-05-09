@@ -1,0 +1,49 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <atom:link href="http://localhost:5173/explorer" rel="self" type="application/rss+xml"/>
+        <atom:link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
+        <title>RSS de cuadros de Tesauro/Realismo</title>
+        <link>http://localhost:5173/home</link>
+        <description>RSS de cuadros de Tesauro/Realismo</description>
+        <language>es-ES</language>
+        <pubDate>Mon, 06 May 2024 18:21:10 +0200</pubDate>
+        <lastBuildDate>Mon, 06 May 2024 18:21:10 +0200</lastBuildDate>
+        <ttl>60</ttl>
+
+        <item>
+            <guid isPermalink="true">http://localhost:5173/hiperrealismo</guid>
+            <title></title>
+            <link>http://localhost:5173/hiperrealismo</link>
+            <description>
+                <img align="left" src=""/>
+
+            </description>
+            <pubDate>Thu, 09 Jun 2022 11:28:50 +0200</pubDate>
+            <dc:creator></dc:creator>
+        </item>
+
+        <item>
+            <guid isPermalink="true">http://localhost:5173/hiperrealismo</guid>
+            <title>Eduardo Naranjo</title>
+            <link>http://localhost:5173/hiperrealismo</link>
+            <description>
+                <img align="left" src="https://arthive.com/res/media/img/orig/work/a40/167305.webp"/>
+                La descripción de la obra aún no existe. A lo mejor, aparecerá más tarde. Sigue las actualizaciones de Tesauro.
+            </description>
+            <pubDate>Thu, 09 Jun 2022 11:28:50 +0200</pubDate>
+            <dc:creator>Eduardo Naranjo</dc:creator>
+        </item>
+
+        <item>
+            <guid isPermalink="true">http://localhost:5173/hiperrealismo</guid>
+            <title>El Thyssen </title>
+            <link>http://localhost:5173/hiperrealismo</link>
+            <description>
+                <img align="left" src="https://offloadmedia.feverup.com/madridsecreto.co/wp-content/uploads/2024/01/11120109/ventana-con-lluvia-1-1024x683.jpg"/>
+                El alféizar de una ventana. Sobre ella, un par de frascos vacíos, un tapón perdido, una radio antigua encima de unos cartones. A través del cristal, la lluvia, el muro de otra casa, una verja, un árbol. La pintura de Isabel Quintanilla (Madrid, 1938-Brunete, 2017)
+            </description>
+            <pubDate>Thu, 09 Jun 2022 11:28:50 +0200</pubDate>
+            <dc:creator>Isabel Quintanilla</dc:creator>
+        </item>
+    </channel>
+</rss>
