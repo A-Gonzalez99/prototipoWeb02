@@ -11,6 +11,7 @@ import Realismo from './pages/Realismo'
 import Surrealismo from './pages/Surrealismo'
 import Seguimiento from './pages/Seguimiento'
 import Contato from './pages/Contacto'
+import Rss from './pages/Rss'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/surrealismo' element={<Surrealismo />} />
         <Route path='/seguimiento' element={<Seguimiento />} />
         <Route path='/contacto' element={<Contato />} />
+        <Route path='/rss' element={<Rss />} />
 
         <Route path="*" element={<Home />} />
       </Routes>

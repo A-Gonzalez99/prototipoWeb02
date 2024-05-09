@@ -37,7 +37,7 @@ function MenuCabeza() {
                     <div className="panelTest2"><img onClick={openHome} className="imgLogo" src="././imgs/logo.png" /></div>
                     <div className="panelTest5"><button id="b-menu" onClick={openMenu} onMouseOver={() => buttonOver("b-menu")} onMouseOut={() => buttonDef("b-menu")} className="button-def"><i class="fa-solid fa-bars"></i>Menu</button></div>
                     <div className="panelTest4"><div className="buscador-menu"></div></div>
-                    <div className="panelTest5">
+                    <div className="panelTest6">
                         <button id="b-lista" className="button-def" onClick={() => openPage("/seguimiento")} onMouseOver={() => buttonOver("b-lista")} onMouseOut={() => buttonDef("b-lista")}>
                             <i class="fa-solid fa-bookmark"></i>Lista de Seguimiento
                         </button>

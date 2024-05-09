@@ -34,6 +34,7 @@ function MenuPie() {
                     <div className="panelAcceso2">
                         <p onClick={() => openPage("/politicasdeuso")}>Política de privacidad</p>
                         <p onClick={() => openPage("/contacto")}>Contacto</p>
+                        <p onClick={() => openPage("/rss")}><i class="fa-solid fa-square-rss"></i> RSS</p>
                     </div>
                 </div>
                 <img src="./imgs/logo.png" />

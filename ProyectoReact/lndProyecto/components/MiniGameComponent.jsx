@@ -9,12 +9,14 @@ function MiniGameComponent() {
     const [score, setScore] = useState([]);
     // Pinturas bd
     const [pinturas, setPinturas] = useState([]);
-    const [contador, setContador] = useState(0);
+    let [contadorNivel, setContadorNivel] = useState(0);
     const [contadorPuntos, setContadorPuntos] = useState(0);
     const [contadorIntento, setContadorIntento] = useState(0);
     const [idJugagor, setIdJugagor] = useState(-1);
     const [searchTerm, setSearchTerm] = useState('');
     const [completado, setCompletado] = useState(false);
+    const [shuffledDB, setShuffledDB] = useState([]);
+    const [palabras, setPalabras] = useState([]);
 
     
 
@@ -27,16 +29,11 @@ function MiniGameComponent() {
 
                 auxMovies.push({
                     name: data.name,
-                    tag: data.tag,
                     url: data.url
                 })
 
             })
             setPinturas([...auxMovies]);
-            const movieNames = auxMovies.map((movie) => movie.name);
-            const filtered = movieNames.filter((name) =>
-                name.toLowerCase().includes(searchTerm.toLowerCase())
-            );
         })
     }
 
@@ -47,12 +44,19 @@ function MiniGameComponent() {
         }
         return array;
     }
-    let shuffledDB = mesclarImgs(pinturas);
 
-    useEffect(() => {
-        getAllMovies()
-        
-    }, []);
+    function desorderArray(array) {
+        // Create a copy of the original array to avoid modifying it directly
+        const disorderedArray = [...array];
+      
+        // Iterate through the array from the end, swapping elements with random indexes
+        for (let i = disorderedArray.length - 1; i > 0; i--) {
+          const randomIndex = Math.floor(Math.random() * (i + 1)); // Generate random index within bounds
+          [disorderedArray[i], disorderedArray[randomIndex]] = [disorderedArray[randomIndex], disorderedArray[i]];
+        }
+      
+        return disorderedArray;
+      }
 
 
     const getAllScores = () => {
@@ -78,11 +82,8 @@ function MiniGameComponent() {
     
     useEffect(() => {
         getAllScores();
-        shuffledDB =mesclarImgs(pinturas);
-        console.log(shuffledDB)
-        
-    }, []);
-
+    }, []); 
+    
     const addNewJugador = () => {
         const nameJugador = document.getElementById("name-player").value;
         const scoreJugador = 0;
@@ -95,17 +96,28 @@ function MiniGameComponent() {
     }
 
     // Logica del Juego
+    const [cClick, setCClick] = useState(2);
 
- 
-
-    const startJuego = () => {
+    function startJuego ()  {
         const n = document.getElementById("name-player").value
         if (n.length > 2 && n.length < 14) {
-            console.log(shuffledDB)   
-            document.getElementById("imgJuego").src = shuffledDB[contador].url
-            document.getElementById("nombre-jugador-juego").textContent = n
-            document.getElementById("div-start-game").style.visibility = "hidden"
-            addNewJugador()
+            setCClick((cClick-1))
+        
+                getAllMovies()
+               
+                document.getElementById("start-game").textContent="Si x"+cClick;
+                document.getElementById("info-nombre").textContent="¿Quieres jugar con este nombre?"
+                
+                setShuffledDB(mesclarImgs(pinturas))
+                document.getElementById("imgJuego").src = shuffledDB[0].url
+
+                document.getElementById("nombre-jugador-juego").textContent = n
+                document.getElementById("div-start-game").style.visibility = "hidden"
+               
+                addNewJugador()
+                siguienteCuadro()
+         
+           
         }
     };
 
@@ -116,15 +128,14 @@ function MiniGameComponent() {
     };
 
     const handleClick = () => {
-        if (pinturas.length > contador && completado == false) {
+        if (pinturas.length > contadorNivel && completado == false) {
             verificar()
         }
     };
 
-    const verificar = () => {
+    function verificar () {
         let texto = document.getElementById("name").value
-
-        if (texto == shuffledDB[contador].name) {
+        if (texto == shuffledDB[contadorNivel].name) {
             if (contadorIntento == 0) { setContadorPuntos(contadorPuntos + 50), document.getElementById("texto-intento-0").textContent = texto, updateScoreJugador(contadorPuntos + 50) }
             if (contadorIntento == 1) { setContadorPuntos(contadorPuntos + 25), document.getElementById("texto-intento-1").textContent = texto, updateScoreJugador(contadorPuntos + 25) }
             if (contadorIntento == 2) { setContadorPuntos(contadorPuntos + 5), document.getElementById("texto-intento-2").textContent = texto, updateScoreJugador(contadorPuntos + 5) }
@@ -149,6 +160,7 @@ function MiniGameComponent() {
             }
 
             setContadorIntento(contadorIntento + 1);
+
             if (contadorIntento == 2) {
                 document.getElementById("intento-2").className = "intento-fallido"
                 document.getElementById("texto-intento-2").textContent = texto
@@ -157,22 +169,33 @@ function MiniGameComponent() {
                 setContadorIntento(0);
                 setCompletado(true)
             }
+
         }
     }
 
     const siguienteCuadro = () => {
-        setContador(contador + 1);
-        document.getElementById("imgJuego").src = shuffledDB[contador + 1].url
-        document.getElementById("boton-seguir").style.visibility = "hidden"
-        setCompletado(false)
-        document.getElementById("texto-intento-0").textContent = ""
-        document.getElementById("texto-intento-1").textContent = ""
-        document.getElementById("texto-intento-2").textContent = ""
-        document.getElementById("intento-0").className = "div-game-points-intento-actual"
-        document.getElementById("intento-1").className = "div-game-points-intento"
-        document.getElementById("intento-2").className = "div-game-points-intento"
-        document.getElementById('imgJuego').style.filter = 'blur(15px)';
-        setSearchTerm('')
+        if(shuffledDB.length!=contadorNivel+1){
+
+            setContadorNivel(contadorNivel + 1);
+            document.getElementById("imgJuego").src = shuffledDB[(contadorNivel+1)].url
+            document.getElementById("boton-seguir").style.visibility = "hidden"
+            setCompletado(false)
+            document.getElementById("texto-intento-0").textContent = ""
+            document.getElementById("texto-intento-1").textContent = ""
+            document.getElementById("texto-intento-2").textContent = ""
+            document.getElementById("intento-0").className = "div-game-points-intento-actual"
+            document.getElementById("intento-1").className = "div-game-points-intento"
+            document.getElementById("intento-2").className = "div-game-points-intento"
+            document.getElementById('imgJuego').style.filter = 'blur(15px)';
+            setSearchTerm('')
+            setContadorIntento(0)
+            console.log("Nivel: "+(contadorNivel+1)+" Nombre: "+shuffledDB[(contadorNivel+1)].name)
+
+        }
+        
+        if(shuffledDB.length-1==contadorNivel){
+            document.getElementById("boton-seguir").textContent="Fin del juego"
+        }
     }
 
     return (
@@ -215,14 +238,21 @@ function MiniGameComponent() {
                                 <button onClick={handleClick}><i class="fa-solid fa-share"></i></button>
                             </div>
 
-                            <select multiple hidden={!searchTerm.length} onChange={(event) => {
+                            <select multiple onChange={(event) => {
                                 setSearchTerm(event.target.value); // Update searchTerm on change
                             }}>
-                                {pinturas.map((m) => (
-                                    <option key={m.name} value={m.name}>
+                                
+                                {
+                                    
+                                
+                                    desorderArray(pinturas).map((m) => (
+                                        <option 
+                                        key={m.name} 
+                                        value={m.name}>
                                         {m.name}
-                                    </option>
-                                ))}
+                                        </option>
+                                    ))
+                                }
                             </select>
 
                         </div>
@@ -245,7 +275,8 @@ function MiniGameComponent() {
                         name="name-player"
                         placeholder="Nombre del jugador (3-13 Letras)"
                     />
-                    <button id="start-game" onClick={startJuego}>StarGame</button>
+                    <p id="info-nombre"> </p>
+                    <button id="start-game" onClick={startJuego}>Iniciar</button>
                 </div>
             </div >
         </>

@@ -84,6 +84,14 @@
   align-content: center;
 }
 
+.panelTest6 {
+  /* background-color: red; */
+  height: 60px;
+  width: auto;
+  margin-right: 16px;
+  align-content: center;
+}
+
 .buscador-menu {
   background-color: white;
   height: 36px;
@@ -193,4 +201,26 @@
   margin: 8px;
   margin-left: 28px;
   cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+
+  .panelTest3 {
+    visibility: hidden;
+    width: 0px;
+    height: auto;
+  }
+  .panelTest6{
+    visibility: hidden;
+    width: 0px;
+    height: auto;
+  }
+
+  .panelTest4{
+    visibility: hidden;
+    width: 0px;
+    height: auto;
+  }
+  
 }

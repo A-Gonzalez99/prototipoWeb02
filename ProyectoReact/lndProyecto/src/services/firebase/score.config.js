@@ -24,9 +24,6 @@ const updateScore =  (key, newPoints) => {
     try {
         // Obtener una referencia al puntaje del jugador usando la clave proporcionada
         const scoreRef = ref(db, `/Score/${key}`);
-        console.log(key)
-        console.log(newPoints)
-
         // Actualizar el puntaje del jugador
         update(scoreRef, {
             points: newPoints
