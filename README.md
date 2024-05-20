@@ -2,6 +2,7 @@
 
 <h1>Description:</h1>
 This educational website aims to offer information about suadros. Users can browse the web, search for specific painters, and view information about their lives, styles, and most famous works.
+<a href="https://students-c4cc1.web.app/">Web Link</a>
 
 <h1>Used technology:</h1>
 <p>React: JavaScript framework for creating dynamic user interfaces.</p>
