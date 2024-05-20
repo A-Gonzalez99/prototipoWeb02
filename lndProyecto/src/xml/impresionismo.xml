@@ -1,0 +1,49 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <atom:link href="http://localhost:5173/explorer" rel="self" type="application/rss+xml"/>
+        <atom:link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
+        <title>RSS de cuadros de Tesauro/Realismo</title>
+        <link>http://localhost:5173/home</link>
+        <description>RSS de cuadros de Tesauro/Realismo</description>
+        <language>es-ES</language>
+        <pubDate>Mon, 06 May 2024 18:21:10 +0200</pubDate>
+        <lastBuildDate>Mon, 06 May 2024 18:21:10 +0200</lastBuildDate>
+        <ttl>60</ttl>
+
+        <item>
+            <guid isPermalink="true">http://localhost:5173/impresionismo</guid>
+            <title>Pancorbo</title>
+            <link>http://localhost:5173/impresionismo</link>
+            <description>
+                <img align="left" src="https://www.museunacional.cat/sites/default/files/017453-000.JPG"/>
+                Esta obra está seleccionada para el proyecto «Partage Plus – Digitising and Enabling Art Nouveau for Europeana»
+            </description>
+            <pubDate>Thu, 09 Jun 2022 11:28:50 +0200</pubDate>
+            <dc:creator>Darío de Regoyos y Valdés</dc:creator>
+        </item>
+
+        <item>
+            <guid isPermalink="true">http://localhost:5173/impresionismo</guid>
+            <title>Paisaje de Castilla</title>
+            <link>http://localhost:5173/impresionismo</link>
+            <description>
+                <img align="left" src="https://content3.cdnprado.net/imagenes/Documentos/imgsem/a1/a10f/a10f154c-0bc3-4004-b9e6-55a7b9b2c7cb/994331bf-f2a6-4ad3-9d27-1dbc41984828_832.jpg"/>
+                Nacido en el seno de una familia de la alta sociedad madrileña, estudió leyes y se doctoró en derecho civil en 1867. Compaginó sus estudios legales con su afición por las Bellas Artes, pues desde 1874 estudió pintura en la Escuela de Bellas Artes junto a Carlos de Haes, y acudió al Museo del Prado
+            </description>
+            <pubDate>Thu, 09 Jun 2022 11:28:50 +0200</pubDate>
+            <dc:creator>Aureliano de Beruete</dc:creator>
+        </item>
+
+        <item>
+            <guid isPermalink="true">http://localhost:5173/impresionismo</guid>
+            <title>Valle en la sierra del Guadarrama</title>
+            <link>http://localhost:5173/impresionismo</link>
+            <description>
+                <img align="left" src="https://www.rubendeluis.com/wp-content/uploads/2018/06/Carlos-de-Haes-guadarrama.jpg"/>
+                Haes nacido en Bélgica aunque pasó gran parte de su vida en España, tiene una educación y formación importante en la pintura de Flandes de las escuelas del norte por lo que esta influencia se verá reflejado en su pintura. A lo largo del siglo XIX hay dos líneas bien marcadas como es la pintura clasicista que comienza ya en el siglo XVII con artista como Claudio de Lorena.
+            </description>
+            <pubDate>Thu, 09 Jun 2022 11:28:50 +0200</pubDate>
+            <dc:creator>Carlos de Haes</dc:creator>
+        </item>
+    </channel>
+</rss>

@@ -1,0 +1,44 @@
+.div-explorador-cuerpo {
+  width: 100vw;
+  margin-top: 16px;
+}
+
+.div-explorador-cuerpo h6 {
+  text-align: center;
+}
+
+.div-explorador-img {
+  margin-top: 16px;
+  display: flex;
+  overflow: hidden;
+
+}
+
+.div-explorador-img div {
+  margin: 8px;
+}
+
+.div-img-fav {
+  position: absolute;
+  align-self: flex-end;
+  align-items: flex-end;
+  display: flex;
+  z-index: 2;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: flex-end;
+  margin: 8px;
+  margin-top: -50px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.div-img-fav {
+  color: #f5c518;
+  font-size: large;
+  border: black;
+  cursor: pointer;
+}

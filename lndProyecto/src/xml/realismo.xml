@@ -1,0 +1,52 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:media="http://search.yahoo.com/mrss/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <atom:link href="http://localhost:5173/explorer" rel="self" type="application/rss+xml"/>
+        <atom:link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
+        <title>RSS de cuadros de Tesauro/Realismo</title>
+        <link>http://localhost:5173/home</link>
+        <description>RSS de cuadros de Tesauro/Realismo</description>
+        <language>es-ES</language>
+        <pubDate>Mon, 06 May 2024 18:21:10 +0200</pubDate>
+        <lastBuildDate>Mon, 06 May 2024 18:21:10 +0200</lastBuildDate>
+        <ttl>60</ttl>
+
+        <item>
+            <guid isPermalink="true">http://localhost:5173/realismo</guid>
+            <title>El 3 de mayo de 1808</title>
+            <link>http://localhost:5173/realismo</link>
+            <description>
+                <img align="left" src="https://content3.cdnprado.net/imagenes/Documentos/imgsem/5e/5e17/5e177409-2993-4240-97fb-847a02c6496c/397fb2fb-8ef1-483f-b2d5-2b46100444e0_832.jpg"/>
+            Finalizada la guerra de la Independencia en 1813, el regreso a España de Fernando VII se había conocido desde diciembre de 1813, por el tratado de Valençay, así como su consiguiente entrada en Madrid. A principios de febrero la cuestión era inminente, habiéndole enviado el Consejo de la Regencia las condiciones para su vuelta al trono, en primer lugar, la jura de la Constitución de 1812. Su llegada a la capital iba a coincidir con la primera conmemoración del alzamiento del pueblo de Madrid contra los franceses el 2 de mayo de 1808. Entre febrero y marzo de 1814, el infante don Luís María de Borbón y Vallabriga, presidente del Consejo de la Regencia, así como las Cortes y el Ayuntamiento de Madrid, comenzaron la preparación de los actos para la entrada del rey. En la bibliografía sobre "El 2 de mayo de 1808 en Madrid" o "La lucha con los mamelucos" (P748), y su compañero, El "3 de mayo de 1808 en Madrid" o "Los fusilamientos", se fue consolidando, erróneamente, la idea de que estas obras fueron pintadas con un destino público en las calles de la capital.
+            </description>
+            <pubDate>Thu, 09 Jun 2022 11:28:50 +0200</pubDate>
+            <dc:creator>Francisco de Goya</dc:creator>
+        </item>
+
+        <item>
+            <guid isPermalink="true">http://localhost:5173/realismo</guid>
+            <title>La forja de un héroe liberal</title>
+            <link>http://localhost:5173/realismo</link>
+            <description>
+                <img align="left" src="https://content3.cdnprado.net/imagenes/Documentos/imgsem/cc/cc12/cc128630-425b-4752-a805-008d26556bbb/1bb6eb26-b3ad-41ea-9696-791ba611e31f_832.jpg"/>
+            Obra maestra de toda la producción de Gisbert, este impresionante cuadro es también una de las indiscutibles y más bellas cumbres alcanzadas por el género histórico en España durante el antepasado siglo. Constituye además uno de los grandes manifiestos políticos de toda la historia de la pintura española en defensa de la libertad del hombre aplastada por el autoritarismo, siendo uno de los contados casos en que su claro mensaje propagandístico fue inspirado directamente por la oficialidad gubernamental. En efecto, el cuadro no ingresó en el Prado tras su paso por las Exposiciones Nacionales de Bellas Artes, como era habitual, sino que fue encargado directamente para el museo durante la regencia de María Cristina de Habsburgo-Lorena por el gobierno liberal de Práxedes Mateo Sagasta (1825-1903) al alicantino Antonio Antonio Gisbert, ya entonces consagrado como artista abanderado de este partido desde que pintara muchos años antes su cuadro de Los Comuneros, en pugna -más ideológica y estética que real- con Casado del Alisal, maestro representante de la oficialidad conservadora, publicándose la noticia del encargo en los diarios madrileños incluso algunos días antes de su designación oficial.
+            </description>
+            <pubDate>Thu, 09 Jun 2022 11:28:50 +0200</pubDate>
+            <dc:creator>José María de Torrijos</dc:creator>
+        </item>
+
+        <item>
+            <guid isPermalink="true">http://localhost:5173/realismo</guid>
+            <title>La menina palentina</title>
+            <link>http://localhost:5173/realismo</link>
+            <description>
+                <img align="left" src="https://content3.cdnprado.net/imagenes/Documentos/imgsem/9f/9fdc/9fdc7800-9ade-48b0-ab8b-edee94ea877f/41866afd-6396-45e7-bd26-944263cf92f7_832.jpg"/>
+            Es una de las obras de mayor tamaño de Velázquez y en la que puso un mayor empeño para crear una composición a la vez compleja y creíble, que transmitiera la sensación de vida y realidad, y al mismo tiempo encerrara una densa red de significados. El pintor alcanzó su objetivo y el cuadro se convirtió en la única pintura a la que el tratadista Antonio Palomino dedicó un epígrafe en su historia de los pintores españoles (1724). Lo tituló En que se describe la más ilustre obra de don Diego Velázquez, y desde entonces no ha perdido su estatus de obra maestra. Gracias a Palomino sabemos que se pintó en 1656 en el Cuarto del Príncipe del Alcázar de Madrid, que es el escenario de la acción. El tratadista cordobés también identificó a la mayor parte de los personajes: son servidores palaciegos, que se disponen alrededor de la infanta Margarita, a la que atienden doña María Agustina Sarmiento y doña Isabel de Velasco, meninas de la reina. Además de ese grupo, vemos a Velázquez trabajar ante un gran lienzo, a Mari Bárbola y Nicolasito Pertusato, que azuza a un mastín, a la dama de honor doña Marcela de Ulloa, junto a un guardadamas, y, al fondo, tras la puerta, asoma José Nieto, aposentador. En el espejo se ven reflejados los rostros de Felipe IV y Mariana de Austria, padres de la infanta y testigos de la escena. Los personajes habitan un espacio modelado no sólo mediante las leyes de la perspectiva científica sino también de la perspectiva aérea, en cuya definición representa un papel importante la multiplicación de las fuentes de luz.
+            </description>
+            <pubDate>Thu, 09 Jun 2022 11:28:50 +0200</pubDate>
+            <dc:creator>Diego Velázquez</dc:creator>
+        </item>
+
+    </channel>
+</rss>
