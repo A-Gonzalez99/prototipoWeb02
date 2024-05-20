@@ -6,13 +6,12 @@ import {getDatabase} from "firebase/database"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDvNr193aqTYRKbl8xD5KVt-eq1eMIxTgc",
-  authDomain: "students-c4cc1.firebaseapp.com",
-  databaseURL: "https://students-c4cc1-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "students-c4cc1",
-  storageBucket: "students-c4cc1.appspot.com",
-  messagingSenderId: "1048363134486",
-  appId: "1:1048363134486:web:23cf3fe5cd11960349cf37"
+  apiKey: "AIzaSyAQ7u_NwPWCG3W9zWGMSR3fbpYdib4didc",
+  authDomain: "tesa-643e4.firebaseapp.com",
+  projectId: "tesa-643e4",
+  storageBucket: "tesa-643e4.appspot.com",
+  messagingSenderId: "29096489411",
+  appId: "1:29096489411:web:8a608d4586cc5adde5cd76"
 };
 
 // Initialize Firebase
